@@ -32,7 +32,8 @@ else:
     print('Не выполняется')
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/4e628717-c13f-4a4f-b605-0106ff492e20)
+![image](https://github.com/user-attachments/assets/a6940e1f-d6ee-4ee2-aaf7-7dec55d64bef)
 ## Выводы
 
 ## Лабораторная работа №2
@@ -46,7 +47,8 @@ elif 0 < one < 10:
 else:
     print('Переменная больше 10')
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/287b9e99-53ab-4157-b6c2-6c7543e7bd3b)
 - Краткие Выводы
 
 ## Лабораторная работа №3
@@ -59,7 +61,8 @@ if value in numbers:
 else:
     print('Переменной нет в данном массиве')
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/02e7e86c-ebf3-4b03-8194-38896654f85b)
 - Краткие Выводы
   
 ## Лабораторная работа №4
@@ -75,7 +78,8 @@ if value in numbers:
 else:
     print(f"Переменной нет в массиве Nunbers и она равна {value}")
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/2c42752a-0e6d-49b4-a09a-0a13f7b603a2)
 - Краткие Выводы
 
 ## Лабораторная работа №5
@@ -94,7 +98,8 @@ for i in range(10):
     else:
         break
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/42aade06-ccde-4ed6-a6dd-d3c7fd4f4064)
 - Краткие Выводы
 
 ## Лабораторная работа №6
@@ -110,7 +115,9 @@ for i in string:
 else:
     print(f"Буквы '{value}' нет в указанной строке")
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/6c298ade-b0ef-49c2-b0fb-875c4cf4e218)
+![image](https://github.com/user-attachments/assets/320532fe-4590-4086-87ba-e9c3ceecb26a)
 - Краткие Выводы
 
 ## Лабораторная работа №7
@@ -126,7 +133,9 @@ for i in range(10, 0, -1):
     result = i * 2
     print(f"{i} * 2 = {result}")
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/a2108fc9-25a4-48f6-949e-8445cee2277f)
+![image](https://github.com/user-attachments/assets/e2d28016-1db6-4e81-aa71-d9879ee9a2f7)
 - Краткие Выводы
 
 ## Лабораторная работа №8
@@ -142,7 +151,8 @@ while value < 100:
         value -= 5
     print(value)
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/23b7f924-b651-47b2-8c63-f4a76a44ea32)
 - Краткие Выводы
 
 ## Лабораторная работа №9
@@ -157,7 +167,8 @@ for i in range(10):
             pass
 print(value)
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/ce035bbc-e32b-45f7-8821-511fd822fde3)
 - Краткие Выводы
 
 ## Лабораторная работа №10
@@ -186,7 +197,9 @@ while ' world' not in string:
         string = memory
         counter += 1
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/6524e596-10fb-45fe-847e-1f165086777e)
+![image](https://github.com/user-attachments/assets/d34eaa8c-f584-4f49-a896-4a5231fc3a38)
 - Краткие Выводы
 
 ## Самостоятельная работа №1
@@ -202,7 +215,8 @@ for _ in range(2):
     x += 1
 print(x)
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/a027c8a1-5064-4530-9f3e-309dcc1c1c5a)
 - Развернутый вывод
   
 ## Самостоятельная работа №2
@@ -212,7 +226,8 @@ x = "Hello World"
 for z in x[::-1]:
     print(z)
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/9b32619c-5568-4d1a-8e1a-d205b9c3c7a3)
 - Развернутый вывод
   
 ## Самостоятельная работа №3
@@ -233,7 +248,8 @@ if 0 <= x <= 10:
 else:
     print("Неправильный ввод")
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/56e6624e-4664-4a2f-87b3-3fc81f167058)
 - Развернутый вывод
   
 ## Самостоятельная работа №4
@@ -251,9 +267,12 @@ print(len(x))
 print(x.lower())
 print(sum(z in vowels for z in x.lower()))
 print(x.replace("ugly", "beauty"))
-print(x.startswith("The"), x.endswith("end"))
+print(x.startswith("The"), x.endswith("end."))
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/b772bb5d-6108-46df-b181-ebf5c02e1359)
+![image](https://github.com/user-attachments/assets/1b5c64bb-f5ff-4ed8-8ff4-4774ac355278)
+![image](https://github.com/user-attachments/assets/1f7038b1-9a8f-45e7-a9fe-1cda90cc9c12)
 - Развернутый вывод
   
 ## Самостоятельная работа №5
@@ -275,7 +294,8 @@ while ' world' not in string:
         string = memory
         counter += 1
 ```
-- Скрины консоли
+### Результат.
+![image](https://github.com/user-attachments/assets/0a41e6e8-ab36-4e63-b5a5-d33742322bb3)
 - Развернутый вывод
 
 ## Общие выводы по теме
