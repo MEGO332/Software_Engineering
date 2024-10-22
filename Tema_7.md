@@ -24,7 +24,7 @@
 ## Лабораторная работа №1
 ### Составьте текстовый файл и положите его в одну директорию с программой на Python. Текстовый файл должен состоять минимум из двух строк.
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/aed4791c-c095-48f6-ba49-067fd26ae5c6)
 ## Лабораторная работа №2
 ### Напишите программу, которая выведет только первую строку из вашего файла, при этом используйте конструкцию open()/close().
 ```python
@@ -33,7 +33,7 @@ print(f.readline())
 f.close()
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/afa97640-3175-44c6-a325-1e64aebbb5a3)
 ## Лабораторная работа №3
 ### Напишите программу, которая выведет все строки из вашего файла в массиве, при этом используйте конструкцию open()/close().
 ```python
@@ -42,7 +42,7 @@ print(f.readline())
 f.close()
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/c157d58c-c009-4ede-b3c7-d6e760e4e86f)
 ## Лабораторная работа №4
 ### Напишите программу, которая выведет все строки из вашего файла в массиве, при этом используйте конструкцию with open().
 ```python
@@ -50,7 +50,7 @@ with open('input.txt', encoding='utf-8') as f:
     print(f.readlines())
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/2bbbfea1-4aeb-49cb-8145-91ec2c5c1dd1)
 ## Лабораторная работа №5
 ### Напишите программу, которая выведет каждую строку из вашего файла отдельно, при этом используйте конструкцию with open().
 ```python
@@ -59,19 +59,19 @@ with open('input.txt', encoding='utf-8') as f:
         print(line)
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/d2dbd53d-1500-4e31-981e-b5b99141a59e)
 ## Лабораторная работа №6
 ### Напишите программу, которая будет добавлять новую строку в ваш файл, а потом выведет полученный файл в консоль. Вывод можно осуществлять любым способом. Обязательно проверьте сам файл, чтобы изменения в нем тоже отображались.
 ```python
 with open('input.txt', 'a+', encoding='utf-8') as f:
     f.write('\nIm additional line')
 
-with open('input.txt', 'r') as f:
+with open('input.txt', 'r', encoding='utf-8') as f:
     result = f.readlines()
     print(result)
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/de677409-ed5b-4d64-9087-bdd1431f6249)
 ## Лабораторная работа №7
 ### Напишите программу, которая перепишет всю информацию, которая была у вас в файле до этого, например напишет любые данные из произвольно вами составленного списка. Также не забудьте проверить что измененная вами информация сохранилась в файле.
 ```python
@@ -82,7 +82,7 @@ with open('input.txt', 'w', encoding='utf-8') as f:
     print('Done!')
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/b0183e08-aeed-45e1-b891-b7265f92bbfd)
 ## Лабораторная работа №8
 ### Выберите любую папку на своем компьютере, имеющую вложенные директории. Выведите на печать в терминал ее содержимое, как и всех подкаталогов при помощи функции print_docs(directory).
 ```python
@@ -98,7 +98,7 @@ def print_docs(directory):
 print_docs('C:\Python_proj\Tema_6')
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/a5b078f4-00e5-4c32-ad02-c21a3fe71322)
 ## Лабораторная работа №9
 ### Документ «input.txt» содержит следующий текст:
 ### Приветствие
@@ -126,7 +126,7 @@ def longest_words(file):
 print(longest_words('input.txt'))
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/b4dd92d2-90aa-46bd-8a45-fa9abf598773)
 ## Лабораторная работа №10
 ### Требуется создать csv-файл «rows_300.csv» со следующими столбцами:
 ### • № - номер по порядку (от 1 до 300);
@@ -146,7 +146,7 @@ with open('rows_300.csv','w', encoding='utf-8', newline='') as f:
     time.sleep(0.01)
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/2df7e1a0-a624-438b-bad4-85afb6389722)
 ## Самостоятельная работа №1
 ### Найдите в интернете любую статью (объем статьи не менее 200 слов), скопируйте ее содержимое в файл и напишите программу, которая считает количество слов в текстовом файле и определит самое часто встречающееся слово. Результатом выполнения задачи будет: скриншот файла со статьей, листинг кода, и вывод в консоль, в котором будет указана вся необходимая информация.
 ```python
@@ -164,7 +164,8 @@ print(f"Всего слов: {word_count}")
 print(f"Самое частое слово: {most_common[0]} ({most_common[1]} раз)")
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/55461946-5ffe-4aab-ad6b-af76ade441cb)
+![image](https://github.com/user-attachments/assets/2c1856be-1c93-4af1-900e-9a9f43281dde)
 ## Выводы
 
 ## Самостоятельная работа №2
@@ -190,7 +191,8 @@ while True:
         break
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/17711800-6b39-4f6c-84d4-514423df475b)
+![image](https://github.com/user-attachments/assets/038f5c8a-c57e-4499-83c5-95fb514e39f5)
 ## Выводы
 
 ## Самостоятельная работа №3
@@ -217,7 +219,7 @@ letters, words, lines = text_statistics('analiz.txt')
 print(f"Файл содержит:\n{letters} букв\n{words} слов\n{lines} строк")
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/7f3aba12-087b-4b74-9fb4-07067405db0f)
 ## Выводы
 
 ## Самостоятельная работа №4
@@ -245,7 +247,7 @@ censored_text = censor_text(text, banned_words)
 print(censored_text)
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/f1724a61-359b-4240-8f38-2799b6f79114)
 ## Выводы
 
 ## Самостоятельная работа №5
@@ -261,7 +263,8 @@ for line in sorted_lines:
     print(line.strip())
 ```
 ### Результат.
-
+![image](https://github.com/user-attachments/assets/037b6a61-088b-47a1-a8f0-fd9a22ca09c9)
+![image](https://github.com/user-attachments/assets/f9fb839d-dd81-48f3-9a1f-e61c69a56424)
 ## Выводы
 
 ## Общие выводы по теме
