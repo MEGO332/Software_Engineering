@@ -147,7 +147,12 @@ for shape in shapes:
 ## Самостоятельная работа №1
 ### Самостоятельно создайте класс и его объект. Они должны отличаться, от тех, что указаны в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 ```python
-
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+novel = Book("1984", "Джорж Орвелл")
+print(novel.title, novel.author)
 ```
 ### Результат.
 
@@ -156,7 +161,15 @@ for shape in shapes:
 ## Самостоятельная работа №2
 ### Самостоятельно создайте атрибуты и методы для ранее созданного класса. Они должны отличаться, от тех, что указаны в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 ```python
-
+class Book:
+    def __init__(self, title, author, year):
+        self.title = title
+        self.author = author
+        self.year = year
+    def summary(self):
+        return f"'{self.title}' by {self.author}, published in {self.year}"
+novel = Book("1984", "Джорж Орвелл", 1949)
+print(novel.summary())
 ```
 ### Результат.
 
@@ -165,7 +178,21 @@ for shape in shapes:
 ## Самостоятельная работа №3
 ### Самостоятельно реализуйте наследование, продолжая работать с ранее созданным классом. Оно должно отличаться, от того, что указано в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 ```python
-
+class Book:
+    def __init__(self, title, author, year):
+        self.title = title
+        self.author = author
+        self.year = year
+    def summary(self):
+        return f"'{self.title}' by {self.author}, published in {self.year}"
+class EBook(Book):
+    def __init__(self, title, author, year, file_size):
+        super().__init__(title, author, year)
+        self.file_size = file_size
+    def summary(self):
+        return f"{super().summary()} (File size: {self.file_size}MB)"
+ebook = EBook("1984", "Джорж Орвелл", 1949, 2)
+print(ebook.summary())
 ```
 ### Результат.
 
@@ -174,7 +201,15 @@ for shape in shapes:
 ## Самостоятельная работа №4
 ### Самостоятельно реализуйте инкапсуляцию, продолжая работать с ранее созданным классом. Она должна отличаться, от того, что указана в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 ```python
-
+class Book:
+    def __init__(self, title, author, year):
+        self.__title = title
+        self.__author = author
+        self.__year = year
+    def get_details(self):
+        return f"'{self.__title}' by {self.__author}, published in {self.__year}"
+novel = Book("1984", "Джорж Орвелл", 1949)
+print(novel.get_details())
 ```
 ### Результат.
 
@@ -183,7 +218,18 @@ for shape in shapes:
 ## Самостоятельная работа №5
 ### Самостоятельно реализуйте полиморфизм. Он должен отличаться, от того, что указан в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 ```python
-
+class Book:
+    def __init__(self, title):
+        self.title = title
+    def description(self):
+        return "Физическая копия книги."
+class EBook(Book):
+    def description(self):
+        return "Электронная копия книги."
+novel = Book("1984")
+ebook = EBook("1984")
+print(novel.description())
+print(ebook.description())
 ```
 ### Результат.
 
