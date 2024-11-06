@@ -222,33 +222,44 @@ greet(john)
 комментариями и скриншоты выполенния всех тестов.
 ```python
 class Tomato:
+    # Словарь для обозначения стадий созревания помидора
     states = {0: 'отсутствует', 1: 'цветение', 2: 'зеленый', 3: 'красный'}
     def __init__(self, index):
+        # Инициализация индекса помидора и его начальной стадии созревания
         self._index = index
         self._state = 0
     def grow(self):
+        # Переход на следующую стадию созревания, если это возможно
         if self._state < 3:
             self._state += 1
     def is_ripe(self):
+        # Проверка, созрел ли помидор (если стадия равна 3)
         return self._state == 3
 class TomatoBush:
     def __init__(self, count):
+        # Создание куста с заданным количеством помидоров
         self.tomatoes = [Tomato(index) for index in range(count)]
     def grow_all(self):
+        # Увеличение стадии созревания для всех помидоров на кусте
         for tomato in self.tomatoes:
             tomato.grow()
     def all_are_ripe(self):
+        # Проверка, созрели ли все помидоры на кусте
         return all(tomato.is_ripe() for tomato in self.tomatoes)
     def give_away_all(self):
+        # Сбор всех помидоров (удаление их с куста)
         self.tomatoes = []
 class Gardener:
     def __init__(self, name, plant):
+        # Инициализация садовника с именем и растением, за которым он ухаживает
         self.name = name
         self._plant = plant
     def work(self):
+        # Садовник ухаживает за растением, переводя все помидоры на следующую стадию созревания
         self._plant.grow_all()
         print("Садовник ухаживает за растением.")
     def harvest(self):
+        # Садовник проверяет, можно ли собрать урожай, и если все помидоры созрели — собирает их
         if self._plant.all_are_ripe():
             self._plant.give_away_all()
             print("Садовник собрал урожай.")
@@ -256,12 +267,15 @@ class Gardener:
             print("Помидоры еще не созрели!")
     @staticmethod
     def knowledge_base():
+        # Справочная информация по садоводству
         print("Справка по садоводству: Ухаживайте за растениями, поливайте и следите за их зрелостью.")
 def main():
+    # Основная функция, запускающая программу
     Gardener.knowledge_base()
-    bush = TomatoBush(4)
-    gardener = Gardener("Иван", bush)
+    bush = TomatoBush(4)  # Создание куста с 4 помидорами
+    gardener = Gardener("Иван", bush)  # Создание садовника, ухаживающего за кустом
     while True:
+        # Запрос команды у пользователя
         command = input("\nВведите команду (уход, урожай, справка, выход): ").strip().lower()
         if command == "уход":
             gardener.work()
@@ -274,6 +288,7 @@ def main():
             break
         else:
             print("Неизвестная команда. Попробуйте еще раз.")
+# Запуск программы, если файл выполняется напрямую
 if __name__ == "__main__":
     main()
 ```
